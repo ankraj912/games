@@ -1,0 +1,80 @@
+.container-1, .container-2, .container-3, .container-4, .container-5{
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    width:75%;
+}
+
+
+.flex-box-container-1, .flex-box-container-2, .flex-box-pick-color, 
+.flex-box-blackjack-row-1, .flex-box-blackjack-row-2, .flex-box-blackjack-row-3 {
+    display: flex;
+    padding:10px;
+    border:1px solid black;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.flex-box-blackjack-row-1, .flex-box-blackjack-row-2 {
+    background: url('images/bj_bg.jpg') center;
+    color:#ffffff;
+}
+
+.flex-box-blackjack-row-1 img {
+    padding: 10px;
+    width:100px;
+    length:150px;
+}
+
+.flex-box-blackjack-row-1 div{
+    border: 1px solid black;
+    padding: 1px;
+    margin auto;
+    justify-content: center;
+    height:350px;
+    flex:1;
+    text-align: center;
+}
+
+.flex-box-blackjack-row-2 button{
+    border:1px solid black;
+    padding: 5px;
+    margin: 15px;;
+}
+
+.flex-box-blackjack-row-2 div{
+    border:1px solid black;
+    padding: 2px;
+}
+
+table, th, td, thead {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: larger;
+    font-family: Arial;
+    font-weight: bolder;
+}
+
+.flex-box-container-1 div{
+    display:flex;
+    padding: 10px;
+    border: 1px solid black; 
+}
+
+.flex-box-container-2 img{
+    margin: 20px;
+    box-shadow:0px 10px 50px rgba(0,0,0,0.7)
+}
+
+.flex-box-container-3{
+    display: flex;
+     padding:20px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.flex-box-container-3 img:hover{
+    box-shadow : 0px 10px 50px rgba(226, 7, 7, 0.7)
+}
