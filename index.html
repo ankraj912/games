@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenges</title>
+</head>
+
+<body>
+    <!--Challenge no. 1-->
+
+    <div class="container-1">
+        <h1> Challenge no. 1 : Your Age in days</h1>
+        <div class="flex-box-container-1">
+            <div><button class="btn btn-success" onclick="ageInDays()"> Play</button></div>
+            <div> <button class="btn btn-danger" onclick="reset()"> Reset</button></div>
+        </div>
+
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result" onclick="reset()"></div>
+        </div>
+    </div>
+
+    <!--Challenge no. 2-->
+
+    <div class="container-2">
+        <h1> Challenge no. 2: Cat Generator</h1>
+        <button class="btn btn-success" id="cat-gen" onclick="catGenerator()">Generate</button>
+        <div class="flex-box-container-2" id="flex-cat-gen">
+
+        </div>
+    </div>
+
+    <!--Challenge no. 3 :  Rock Paper Scissors-->
+
+    <div class="container-3">
+        <h1> challenge no. 3: Rock Paper Scissors</h1>
+        <button class="btn btn-danger" id="rps-reset">Reset</button>
+        <div class="flex-box-container-3" , id="flex-box-rps">
+            <img id="rock" , src="images/rock.jpg" , length="250px" width="200px" , onclick="rpsGame(this)">
+            <img id="paper" , src="images/paper.jpg" , length="250px" width="200px" onclick="rpsGame(this)">
+            <img id="scissors" , src="images/scissors.jpg" , length="250px" width="200px" onclick="rpsGame(this)">
+        </div>
+
+
+    </div>
+
+
+    <!--Challenge no. 4: Colour changing buttons-->
+
+    <div class="container-4">
+        <h1> Challenge no. 4 : Colour change buttons</h1>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <label for="background"> Choose an option</label>
+                <select name="backdrop" , id="background" , onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+
+                </select>
+
+                <button class="btn btn-primary">Twitter</button>
+                <button class="btn btn-success">W3school</button>
+                <button class="btn btn-danger">Yahoo!</button>
+                <button class="btn btn-warning">Google</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Challenge no. 5 : Blackjack-->
+
+    <div class='container-5'>
+        <h1> Challenge no. 5 : 21 Blackjack</h1>
+        <h2> <span id=blackjack-result>Let's Play</span></h2>
+
+        <div class='flex-box-blackjack-row-1'>
+            <div id=your-box>
+                <h2> You: <span id="your-blackjack-result"> 0 </span></h2>
+            </div>
+            <div id=dealer-box>
+                <h2> Dealer: <span id="dealer-blackjack-result"> 0 </span></h2>
+            </div>
+        </div>
+
+        <div class='flex-box-blackjack-row-2'>
+            <div>
+            <button class='btn btn-primary' id='blackjack-hit-button'><h4>Hit</h4></button>
+            <button class='btn btn-warning' id='blackjack-stand-button'><h4>Stand</h4></button>
+            <button class='btn btn-danger ' id='blackjack-deal-button'><h4>Deal</h4></button>
+            </div>
+        </div>
+
+        <div class='flex-box-blackjack-row-3'>
+            <table>
+                <thead>
+                    <td>Won</td>
+                    <td>Lost</td>
+                    <td>Draw</td>
+                </thead>
+                <tr>
+                    <td id='blackjack-won'> 0 </td>
+                    <td id='blackjack-lost'> 0 </td>
+                    <td id='blackjack-draw'> 0 </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="home.js"></script>
+</body>
+
+</html>
